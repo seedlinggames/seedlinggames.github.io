@@ -1,0 +1,137 @@
+html,body{margin:10;padding:10;}
+body{
+    font-size: 14pt;
+    font-family: alice, serif;
+    background:#41314a;
+    text-align: left;
+
+  line-height: 1.5;
+  }
+
+
+#main {
+    background:#f6ecd3;
+    padding:30;
+    padding-left:30;
+    padding-right:30;
+    float:left;
+    border-radius: 15px;
+     box-shadow: 4px 4px 4px #120d14;
+}
+
+.blog {
+  max-width:900px;
+
+  margin: 0 auto;
+}
+
+#banner_img {
+  width:900px;
+  border-radius: 15px;
+}
+
+#updated {
+    font-size:1;
+    font-family: helvetica, arial, sans-serif;
+    color:#FFFFFF;
+    float:left;
+
+}
+
+.hidden {
+    display:none;
+}
+
+.visible {
+    display:block;
+}
+
+.title {
+background:#a3b9c9;
+color:#000000
+font-family: hammersmith, serif;
+font-weight: bold;
+font-size: x-large;
+padding:5;
+padding-left:15;
+ box-shadow: 2px 2px 2px grey;
+ border-radius: 5px;
+}
+
+.subtitle {
+background:#a3b9c9;
+color:#000000
+font-family: hammersmith, serif;
+font-size: large;
+
+  font-style: italic;
+padding:5;
+padding-left:15;
+ box-shadow: 2px 2px 2px grey;
+ border-radius: 5px;
+}
+
+.cover-image-container {
+    width:250px;
+    padding:10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+
+     box-shadow: 2px 2px 2px 2px grey;
+
+  vertical-align: text-top;
+}
+
+.cover-image {
+  width:220px;
+  border-radius:5px;
+  margin:10px;
+
+   box-shadow: 5px 5px 5px grey;
+}
+
+.blog-image {
+    width:250px;
+    padding:5;
+    margin: 0px 0px 15px 15px;
+}
+
+.blog-image-medium {
+    width:500px;
+    padding:5;
+    margin: 0px 0px 15px 15px;
+}
+
+.blog-image-large {
+    width:900px;
+    padding:5;
+    margin: 0px 0px 15px 15px;
+}
+
+.chart-image {
+    width:650px;
+    padding:5;
+}
+
+.button-bar {
+
+  text-align: center;
+}
+
+.button {
+    background-color:#41314a;
+    color:#FFFFFF;
+    margin: 20;
+    padding: 10 30 10 30;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     box-shadow: 2px 2px 2px grey;
+     border-radius: 5px;
+}
+
+.bulletlist {
+  line-height: 2;
+
+}
