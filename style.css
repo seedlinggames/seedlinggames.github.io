@@ -93,6 +93,8 @@ margin-left:30;
   vertical-align: text-top;
 }
 
+
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -155,5 +157,17 @@ td {
 
 .bulletlist {
   line-height: 2;
+}
 
+.stat-block-text-table {
+    border: none !important;
+}
+.stat-block-subheading {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.stat-block-text-table-subject {
+  font-weight: bold;
 }
