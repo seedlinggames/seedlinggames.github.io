@@ -3,6 +3,17 @@
 <title>Seedling Games Open Game Content</title>
 <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
+<script>
+    function toggleHidden(div) {
+        if (div.className == 'hidden') {
+            div.className = 'visible';
+        } else {
+            div.className = 'hidden';
+        }
+    }
+</script>
+
 <div class="blog">
 <div id="main">
   <a href="../../index.html"><img  id="banner_img" src="../images/logo_draft_purply_lighter_banner_long.png" alt="Banner saying 'Seedling' in stylized plants"/></a>
@@ -16,40 +27,43 @@
 <p>Also, if you let me know if you use any of these in a published adventure, it would make me very happy!</p>
 
 <p>13th age equivalents and also better formatting coming soon.</p>
+<p><b>Click on the bar to expand or collapse stat blocks.</b></p>
 
-<h2 class="subtitle">Hatzegopteryx</h2>
-<i>Huge beast</i>
-<p>
-<table class="stat-block-text-table">
-  <tr><td class="stat-block-text-table-subject">Armor Class</td><td>15 (Natural armor)</td> </tr>
-  <tr><td class="stat-block-text-table-subject">Hit Points</td><td> 300 HP (see below)</td> </tr>
-  <tr><td class="stat-block-text-table-subject">Speed</td><td> 0 ft, Fly 60 ft (hover)</td> </tr>
-</table>
-</p>
-<table>
-  <tr><td>STR 18 (+4)</td><td>DEX 3 (-4)</td><td>CON 16 (+3)</td> </tr>
-  <tr><td>INT 2 (-4)</td><td>WIS 10 (+0)</td><td>CHA 6 (-2)</td> </tr>
-</table>
-<p>
-<table class="stat-block-text-table">
-  <tr><td class="stat-block-text-table-subject">Skills</td><td> Perception +3</td> </tr>
-  <tr><td class="stat-block-text-table-subject">Senses</td><td> passive Perception 13</td> </tr>
-  <tr><td class="stat-block-text-table-subject">Languages</td><td> None</td> </tr>
-  <tr><td class="stat-block-text-table-subject">Challenge</td><td> 5 (1,800 XP)</td> </tr>
-</table>
-</p>
-<p class="stat-block-subheading">Attributes</p>
-<p><b>Opportunistic predator:</b> When it has fallen to 150 HP, it must spend its turn trying to move as far away from any enemies as possible, provoking opportunity attacks if needed. </p>
+<h2 class="subtitle"  onclick="toggleHidden(hatzegopteryx)"> Hatzegopteryx (Huge beast, CR 5)</h2>
+<div id="hatzegopteryx" class="hidden">
+  <p>
+  <table class="stat-block-text-table">
+    <tr><td class="stat-block-text-table-subject">Armor Class</td><td>15 (Natural armor)</td> </tr>
+    <tr><td class="stat-block-text-table-subject">Hit Points</td><td> 300 HP (see below)</td> </tr>
+    <tr><td class="stat-block-text-table-subject">Speed</td><td> 0 ft, Fly 60 ft (hover)</td> </tr>
+  </table>
+  </p>
+  <table>
+    <tr><td>STR 18 (+4)</td><td>DEX 3 (-4)</td><td>CON 16 (+3)</td> </tr>
+    <tr><td>INT 2 (-4)</td><td>WIS 10 (+0)</td><td>CHA 6 (-2)</td> </tr>
+  </table>
+  <p>
+  <table class="stat-block-text-table">
+    <tr><td class="stat-block-text-table-subject">Skills</td><td> Perception +3</td> </tr>
+    <tr><td class="stat-block-text-table-subject">Senses</td><td> passive Perception 13</td> </tr>
+    <tr><td class="stat-block-text-table-subject">Languages</td><td> None</td> </tr>
+    <tr><td class="stat-block-text-table-subject">Challenge</td><td> 5 (1,800 XP)</td> </tr>
+  </table>
+  </p>
+  <p class="stat-block-subheading">Attributes</p>
+  <p><b>Opportunistic predator:</b> When it has fallen to 150 HP, it must spend its turn trying to move as far away from any enemies as possible, provoking opportunity attacks if needed. </p>
 
-<p class="stat-block-subheading">Actions – when flying</p>
-<p><b>Landing:</b> Each creature within 15 feet and not behind full cover must succeed on a DC 15 Dexterity saving throw or take 2d6+2 bludgeoning damage and be knocked prone. It loses its fly speed of 60ft and gains a walking speed of 20 ft. </p>
+  <p class="stat-block-subheading">Actions – when flying</p>
+  <p><b>Landing:</b> Each creature within 15 feet and not behind full cover must succeed on a DC 15 Dexterity saving throw or take 2d6+2 bludgeoning damage and be knocked prone. It loses its fly speed of 60ft and gains a walking speed of 20 ft. </p>
 
-<p class="stat-block-subheading">Actions – on the ground</p>
-<b>Grasping beak:</b> Melee Weapon Attack: +6 to hit, reach 10 ft, one target. Hit: 2d8 +4 bludgeoning damage. If the target is a Medium creature or smaller, it must make a DC 14 Dexterity saving throw or be grappled. It remains up to 10’ away from the hatzegopteryx.
-<p><b>Shake:</b> Attack: When the hatzegopteryx has at least 10’ of space on all sides and is grappling a creature, it shakes that creature, which must succeed on a DC 15 Constitution saving throw or take 3d8 +4 bludgeoning damage. </p>
+  <p class="stat-block-subheading">Actions – on the ground</p>
+  <b>Grasping beak:</b> Melee Weapon Attack: +6 to hit, reach 10 ft, one target. Hit: 2d8 +4 bludgeoning damage. If the target is a Medium creature or smaller, it must make a DC 14 Dexterity saving throw or be grappled. It remains up to 10’ away from the hatzegopteryx.
+  <p><b>Shake:</b> Attack: When the hatzegopteryx has at least 10’ of space on all sides and is grappling a creature, it shakes that creature, which must succeed on a DC 15 Constitution saving throw or take 3d8 +4 bludgeoning damage. </p>
+</div>
 
-<h2 class="subtitle">Utahraptor, wild</h2>
-<i>Medium beast</i>
+<h2 class="subtitle" onclick="toggleHidden(wild_utahraptor)">Utahraptor, wild (Medium beast, CR 2)</h2>
+<div id="wild_utahraptor" class="hidden">
+
 <p>
 <table class="stat-block-text-table">
   <tr><td class="stat-block-text-table-subject">Armor Class</td><td>15 (Natural armor)</td> </tr>
@@ -76,8 +90,10 @@
 <p><b>Kick:</b> Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 7 (1d6 + 4), or 13 (1d6 + 1d10 + 4) on a prone target.</p>
 <p><b>Bite:</b> Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 7 (1d6 +4). If an ally is within 5 feet of the target, the target must make a DC 13 Strength saving throw or fall prone.</p>
 
-<h2 class="subtitle">Utahraptor, domestic</h2>
-  <i>Medium beast</i>
+</div>
+
+<h2 class="subtitle"  onclick="toggleHidden(tame_utahraptor)">Utahraptor, domestic (Medium beast, CR 1/2)</h2>
+<div id="tame_utahraptor"  class="hidden">
   <p>
   <table class="stat-block-text-table">
     <tr><td class="stat-block-text-table-subject">Armor Class</td><td>11 (Natural armor)</td> </tr>
@@ -102,10 +118,10 @@
 
 <p class="stat-block-subheading">Actions</p>
 <p><b>Bite:</b> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.</p>
+</div>
 
-
-<h2 class="subtitle">Mercenary Cavalry</h2>
-<i>Small or medium humanoid </i>
+<h2 class="subtitle" onclick="toggleHidden(mercenary_cavalry)">Mercenary Cavalry (Small or medium humanoid, CR 1/2)</h2>
+<div id="mercenary_cavalry"  class="hidden">
 <p>
 <table class="stat-block-text-table">
   <tr><td class="stat-block-text-table-subject">Armor Class</td><td>13 (hide armor)</td> </tr>
@@ -128,9 +144,10 @@
 
 <p class="stat-block-subheading">Actions</p>
 <p><b>Sabre:</b> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 9 (1d8 +5) on horseback.</p>
+</div>
 
-<h2 class="subtitle">Wasteland Skirmisher</h2>
-<i>Small or medium humanoid </i>
+<h2 class="subtitle" onclick="toggleHidden(wasteland_skirmisher)">Wasteland Skirmisher (Small or medium humanoid, CR 2)</h2>
+<div id="wasteland_skirmisher"  class="hidden">
 <p>
 <table class="stat-block-text-table">
   <tr><td class="stat-block-text-table-subject">Armor Class</td><td>15 (studded leather armor)</td> </tr>
@@ -157,9 +174,10 @@
 <p class="stat-block-subheading">Actions</p>
 <p><b>Lance:</b> Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage, or 11 (1d12 + 5) piercing damage if mounted. </p>
 <p><b>Javelin:</b> Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 8 (1d6 +3) if mounted.</p>
+</div>
 
-<h2 class="subtitle">Dragonborn Scout</h2>
-<i>Medium humanoid (dragonborn)</i>
+<h2 class="subtitle" onclick="toggleHidden(dragonborn_scout)">Dragonborn Scout (Medium humanoid, CR 1/2)</h2>
+<div id="dragonborn_scout"  class="hidden">
 <p>
 <table class="stat-block-text-table">
   <tr><td class="stat-block-text-table-subject">Armor Class</td><td>13 ( leather armor)</td> </tr>
@@ -185,9 +203,10 @@
 <p><b>Shortsword:</b>  Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit: 5 (1d6 +2) piercing damage.</p>
 <p><b>Longbow:</b> Ranged Weapon Attack: +4 to hit, ranged 150/600 ft, one target. Hit: 6 (1d8 +2) piercing damage. </p>
 <p><b>Breath Weapon:</b> The dragonborn scout exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 7 (2d6) acid damage on a failed save, or half as much damage on a successful one</p>
+</div>
 
-<h2 class="subtitle">Dragonborn Berserker</h2>
-<i>Medium humanoid (dragonborn) </i>
+<h2 class="subtitle"  onclick="toggleHidden(dragonborn_berserker)">Dragonborn Berserker (Medium humanoid, CR 1)</h2>
+<div id="dragonborn_berserker"  class="hidden">
 <p>
 <table class="stat-block-text-table">
   <tr><td class="stat-block-text-table-subject">Armor Class</td><td>13 (leather armor)</td> </tr>
@@ -214,9 +233,10 @@
 <p class="stat-block-subheading">Actions</p>
 <p><b>Greatclub: </b> Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit: 6 (1d8 +2) bludgeoning damage </p>
 <p><b>Breath Weapon (Once per encounter): </b> The dragonborn scout exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 7 (2d6) acid damage on a failed save, or half as much damage on a successful one.</p>
+</div>
 
-<h2 class="subtitle">Dragonborn Warlock</h2>
-<i>Medium humanoid (dragonborn) </i>
+<h2 class="subtitle"   onclick="toggleHidden(dragonborn_warlock)">Dragonborn Warlock (Medium humanoid, CR 2)</h2>
+<div id="dragonborn_warlock"  class="hidden">
 <p>
 <table class="stat-block-text-table">
   <tr><td class="stat-block-text-table-subject">Armor Class</td><td>12 (leather armor)</td> </tr>
@@ -248,11 +268,11 @@
 <p class="stat-block-subheading">Actions</p>
 <p><b>Magic Staff: </b>Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit: 6 (1d8 +2) poison damage </p>
 <p><b>Breath Weapon (Once per encounter): </b> The dragonborn scout exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 7 (2d6) acid damage on a failed save, or half as much damage on a successful one.</p>
-
+</div>
 
 </div>
 <div id="updated">
-<p><font size="1"> Updated Feb 2021</font></p>
+<p><font size="1"> Updated March 2021</font></p>
 </div>
 </div>
 </html>

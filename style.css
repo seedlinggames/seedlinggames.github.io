@@ -171,3 +171,11 @@ td {
 .stat-block-text-table-subject {
   font-weight: bold;
 }
+
+.hidden {
+    display:none;
+}
+
+.visible {
+    display:block;
+}
