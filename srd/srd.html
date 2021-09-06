@@ -12,6 +12,19 @@
             div.className = 'hidden';
         }
     }
+
+    // TODO if I ever have more than 2 options this should be totally rewritten
+    function toggleHiddenButton(button, div, otherButton, otherDiv) {
+      toggleHidden(div);
+      toggleHidden(otherDiv);
+      if (div.className == 'visible') {
+          button.className = 'button';
+          otherButton.className = 'button-unselected';
+      } else {
+        button.className = 'button-unselected';
+        otherButton.className = 'button';
+      }
+    }
 </script>
 
 <div class="blog">
@@ -31,8 +44,6 @@
 
   <h2 class="title">Seedling Game Open Game Content</h2>
 
-
-
 <p><i>All content on this page covered by the license <a href="ogl.html">here</a>.</i></p>
 
 <p>This means you're free to use these in your home games - you're also free to use these in published content, wherever Open Game Content is allowed. Make sure you understand how the Open Gaming License works, though, because while I personally don't care, I wouldn't want you to fall afoul of any other parties listed in the license.</p>
@@ -41,6 +52,17 @@
 
 <p>13th age equivalents and also better formatting coming soon.</p>
 <p><b>Click on the bar to expand or collapse stat blocks.</b></p>
+
+<div class=button-bar>
+<a id="fifthToggle" class=button onClick="toggleHiddenButton(this, fifth, thirteenthToggle, thirteenth)">5E stat blocks</a>
+<a id="thirteenthToggle" class=button-unselected onClick="toggleHiddenButton(this, thirteenth, fifthToggle, fifth)">13th age stat blocks</a>
+</div>
+
+<!--
+***************   5E STUFF GOES HERE *******************************************
+-->
+
+<div id="fifth" class="visible">
 
 <h2 class="subtitle"  onclick="toggleHidden(hatzegopteryx)"> Hatzegopteryx (Huge beast, CR 5)</h2>
 <div id="hatzegopteryx" class="hidden">
@@ -55,7 +77,7 @@
     <tr><td class="stat-block-text-table-subject">Speed</td><td> 0 ft, Fly 60 ft (hover)</td> </tr>
   </table>
   </p>
-  <table>
+  <table  class="stat-block-six-stats">
     <tr><td>STR 18 (+4)</td><td>DEX 3 (-4)</td><td>CON 16 (+3)</td> </tr>
     <tr><td>INT 2 (-4)</td><td>WIS 10 (+0)</td><td>CHA 6 (-2)</td> </tr>
   </table>
@@ -90,7 +112,7 @@
   <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 40 ft, Fly 10 ft (glide) </td> </tr>
 </table>
 </p>
-<table>
+<table  class="stat-block-six-stats">
   <tr><td>STR 14 (+2)</td><td>DEX 16 (+3)</td><td>CON 14 (+2)</td> </tr>
   <tr><td>INT 2 (-4)</td><td>WIS 12 (+1)</td><td>CHA 6 (-2)</td> </tr>
 </table>
@@ -123,7 +145,7 @@
     <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 60 ft, Fly 10 ft (glide) </td> </tr>
   </table>
   </p>
-  <table>
+  <table  class="stat-block-six-stats">
     <tr><td>STR 18 (+4)</td><td>DEX 12 (-1)</td><td>CON 13 (+1)</td> </tr>
     <tr><td>INT 2 (-4)</td><td>WIS 12 (+1)</td><td>CHA 7 (-2)</td> </tr>
   </table>
@@ -153,7 +175,7 @@
   <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 30 ft. </td> </tr>
 </table>
 </p>
-<table>
+<table  class="stat-block-six-stats">
   <tr><td>STR 16 (+3)</td><td>DEX 12 (+1)</td><td>CON 16 (+3)</td> </tr>
   <tr><td>INT 10 (+0)</td><td>WIS 8 (-1)</td><td>CHA 10 (+0)</td> </tr>
 </table>
@@ -182,7 +204,7 @@
   <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 30 ft. </td> </tr>
 </table>
 </p>
-<table>
+<table  class="stat-block-six-stats">
   <tr><td>STR 15 (+2)</td><td>DEX 16 (+3)</td><td>CON 14 (+2)</td> </tr>
   <tr><td>INT 10 (+0)</td><td>WIS 14 (+2)</td><td>CHA 14 (+2)</td> </tr>
 </table>
@@ -214,7 +236,7 @@
   <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 30 ft. </td> </tr>
 </table>
 </p>
-<table>
+<table  class="stat-block-six-stats">
   <tr><td>STR 11 (+0)</td><td>DEX 14 (+2)</td><td>CON 12 (+1)</td> </tr>
   <tr><td>INT 11 (+0)</td><td>WIS 14 (+2)</td><td>CHA 11 (+0)</td> </tr>
 </table>
@@ -246,7 +268,7 @@
   <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 30 ft. </td> </tr>
 </table>
 </p>
-<table>
+<table  class="stat-block-six-stats">
   <tr><td>STR 14 (+2)</td><td>DEX 12 (+1)</td><td>CON 14 (+2)</td> </tr>
   <tr><td>INT 10 (+0)</td><td>WIS 10 (+0)</td><td>CHA 12 (+1)</td> </tr>
 </table>
@@ -279,7 +301,7 @@
   <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 30 ft. </td> </tr>
 </table>
 </p>
-<table>
+<table  class="stat-block-six-stats">
   <tr><td>STR 14 (+2)</td><td>DEX 12 (+1)</td><td>CON 12 (+1)</td> </tr>
   <tr><td>INT 10 (+0)</td><td>WIS 10 (+0)</td><td>CHA 14 (+2)</td> </tr>
 </table>
@@ -323,7 +345,7 @@
     <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 10 ft. </td> </tr>
   </table>
   </p>
-  <table>
+  <table  class="stat-block-six-stats">
     <tr><td>STR 16 (+3)</td><td>DEX 16 (+3)</td><td>CON 12 (+1)</td> </tr>
     <tr><td>INT 1 (-5)</td><td>WIS 10 (+0)</td><td>CHA 6 (-2)</td> </tr>
   </table>
@@ -360,7 +382,7 @@
     <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 30 ft. swim, 20 ft land </td> </tr>
   </table>
   </p>
-  <table>
+  <table  class="stat-block-six-stats">
     <tr><td>STR 14 (+2)</td><td>DEX 14 (+2)</td><td>CON 12 (+1)</td> </tr>
     <tr><td>INT 4 (-5)</td><td>WIS 12 (+1)</td><td>CHA 6 (-2)</td> </tr>
   </table>
@@ -396,7 +418,7 @@
     <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 20 ft </td> </tr>
   </table>
   </p>
-  <table>
+  <table  class="stat-block-six-stats">
     <tr><td>STR 16 (+3)</td><td>DEX 6 (-2)</td><td>CON 14 (+2)</td> </tr>
     <tr><td>INT 10 (+0)</td><td>WIS 10 (+0)</td><td>CHA 7 (-2)</td> </tr>
   </table>
@@ -432,7 +454,7 @@
     <tr><td class="stat-block-text-table-subject">Speed</td><td> Speed 30 ft </td> </tr>
   </table>
   </p>
-  <table>
+  <table class="stat-block-six-stats">
     <tr><td>STR 18 (+4)</td><td>DEX 8 (-1)</td><td>CON 16 (+3)</td> </tr>
     <tr><td>INT 3 (-4)</td><td>WIS 10 (+0)</td><td>CHA 6 (-2)</td> </tr>
   </table>
@@ -451,6 +473,317 @@
   <p><b>Trample:</b> +6 vs AC, one prone target, 20 (3d10 + 4) bludgeoning damage.</p>
   </div>
 
+</div>
+
+<!--
+***************   13th Age stuff goes here *******************************************
+-->
+
+<div id="thirteenth" class="hidden">
+
+<h2 class="subtitle"  onclick="toggleHidden(hatzegopteryx13)"> Hatzegopteryx: huge level 3 troop [beast]</h2>
+<div id="hatzegopteryx13" class="hidden">
+  <p><i>An enormous flying prehistoric creature. First appeared in "In The Land of the Dead God."</i>
+  </p>
+  <p>Initiative +0</p>
+  <p>
+  <table class="stat-block-text-table-thirteen">
+    <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">14</td>
+    <td>PD </td><td class="stat-block-left"> 12</td>
+    <td>MD </td><td class="stat-block-left"> 14</td>
+    <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">289</td> </tr>
+  </table>
+  </p>
+  <p>
+    <b>C: Wind buffet +5 vs PD (1d3 nearby enemies)</b> 10 damage each and the hatzegopteryx pops free from all enemies </p>
+  </p>
+  <p>
+    <b>Enormous jaws +7 vs AC</b> 15 damage</br>
+    &emsp;<i>Natural even hit:</i> The creature is grabbed
+  </p>
+	<p>
+    <b>Shake +7 vs PD (one grabbed enemy)</b> 15 damage</br>
+    	&emsp;<i>Natural even hit:</i> The target is dazed</br>
+    	&emsp;<i>Miss:</i> 7 damage
+  </p>
+
+<p>
+<i>Just wants dinner:</i> Once it reaches 100 HP it will automatically flee, using only wind buffet.
+</p>
+</div>
+
+<h2 class="subtitle" onclick="toggleHidden(wild_utahraptor13)">Utahraptor, wild: level 2 troop [beast]</h2>
+<div id="wild_utahraptor13" class="hidden">
+  <p><i>Like the velociraptors in Jurrasic Park. Although in real life velociraptors were very small and this raptor was more of a threat.  First appeared in "In The Land of the Dead God."</i></p>
+
+    <p>Initiative +6</p>
+    <p>
+    <table class="stat-block-text-table-thirteen">
+      <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">18</td>
+      <td>PD </td><td class="stat-block-left"> 15</td>
+      <td>MD </td><td class="stat-block-left"> 12</td>
+      <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">36</td> </tr>
+    </table>
+    </p>
+    <p>
+      <b>Bite +7 vs AC</b> 5 damage</br>
+      &emsp;<i>Critical hit:</i> ongoing 5 damage
+    </p>
+    <p>  <i>Pack Hunter:</i> Pack hunter: Its crit range expands by 2 if another ally is adjacent to the enemy.</p>
+</div>
+
+<h2 class="subtitle" onclick="toggleHidden(domestic_utahraptor13)">Utahraptor, domesticated: level 1 troop [beast]</h2>
+<div id="domestic_utahraptor13" class="hidden">
+  <p><i>Could you tame and then ride a medium-sized raptor? Probably not, but you also can't cast Fireball in real life. First appeared in "In The Land of the Dead God."</i></p>
+    <p>Initiative +3</p>
+    <p>
+    <table class="stat-block-text-table-thirteen">
+      <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">14</td>
+      <td>PD </td><td class="stat-block-left"> 10</td>
+      <td>MD </td><td class="stat-block-left"> 12</td>
+      <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">36</td> </tr>
+    </table>
+    </p>
+    <p>
+      <b>Bite +7 vs AC</b> 5 damage </p>
+    </p>
+</div>
+
+<h2 class="subtitle" onclick="toggleHidden(mercenary_cavalry13)">Mercenary Cavalry: 2nd level mook [humanoid]</h2>
+<div id="mercenary_cavalry13"  class="hidden">
+    <p><i>A vaguely cavalry-themed mook. First appeared in "In The Land of the Dead God." </i></p>
+    <p>Initiative +3</p>
+    <p>
+    <table class="stat-block-text-table-thirteen">
+      <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">18</td>
+      <td>PD </td><td class="stat-block-left"> 16</td>
+      <td>MD </td><td class="stat-block-left"> 12</td>
+      <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">9</td> </tr>
+    </table>
+    </p>
+    <p>
+      <b>R: Javelin +7 vs AC</b> 3 damage </p>
+    </p>
+    <p>
+      <b>Sabre +7 vs AC</b> 5 damage </p>
+    </p>
+</div>
+
+<h2 class="subtitle" onclick="toggleHidden(wasteland_skirmisher13)">Wasteland Skirmisher: 2nd level leader [humanoid]</h2>
+<div id="wasteland_skirmisher13"  class="hidden">
+  <p><i>A tougher cavalry-themed warrior, suitable for leading some mooks. Works best if mounted. First appeared in "In The Land of the Dead God." </i></p>
+
+  <p>Initiative +5</p>
+  <p>
+  <table class="stat-block-text-table-thirteen">
+    <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">18</td>
+    <td>PD </td><td class="stat-block-left"> 16</td>
+    <td>MD </td><td class="stat-block-left"> 12</td>
+    <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">36</td> </tr>
+  </table>
+  </p>
+  <p>
+    <b>R: Javelin +7 vs AC</b> 6 damage</br>
+    &emsp;<i>Natural even hit:</i> One enemy adjacent to the target can disengage
+  </p>
+  <p>
+    <b>Lance +7 vs AC</b> 6 damage</br>
+    &emsp;<i>Natural even hit or miss:</i> If mounted, the mount can also make an attack.
+  </p>
+</div>
+
+<h2 class="subtitle" onclick="toggleHidden(vines_13)">Awakened vines: 1st level mook [plant]</h2>
+<div id="vines_13"  class="hidden">
+    <p><i>Some pretty fragile and easy to avoid plants to fill out your wilderness encounter. First appeared in "A Gathering Storm."</i></p>
+    <p>Initiative +2</p>
+    <p>
+    <table class="stat-block-text-table-thirteen">
+      <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">16</td>
+      <td>PD </td><td class="stat-block-left"> 11</td>
+      <td>MD </td><td class="stat-block-left"> 15</td>
+      <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">7</td> </tr>
+    </table>
+    </p>
+    <p>
+      <b>Lashing vines +6 vs AC</b> 4 damage </br>
+      &emsp;<i>Natural even hit:</i> The target is grabbed. If the vines use Lashing Vines again, the target is released.
+      <p>
+        <b>Poisonous thorns +6 vs PD (one grabbed enemy) </b> 8 poison damage.
+      </p>
+    </p>
+    <p>
+      <b>Sabre +7 vs AC</b> 5 damage </p>
+    </p>
+
+    <p>
+    <i>Slow:</i> The vines can easily be outrun by leaving the area.
+    </p>
+</div>
+
+<h2 class="subtitle" onclick="toggleHidden(dragonborn_scout13)">Dragonic Scout: 1st level archer [humanoid]</h2>
+<div id="dragonborn_scout13"  class="hidden">
+  <p><i> A ranger type with a breath weapon. First appeared in "A gathering storm". </i></p>
+
+    <p>Initiative +7</p>
+    <p>
+    <table class="stat-block-text-table-thirteen">
+      <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">16</td>
+      <td>PD </td><td class="stat-block-left"> 14</td>
+      <td>MD </td><td class="stat-block-left"> 11</td>
+      <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">27</td> </tr>
+    </table>
+    </p>
+    <p>
+      <b>C: Breath weapon +5 vs PD (one nearby enemy, quick action) </b> 3 acid damage</br>
+      &emsp;<i>Limited use:</i> Once per battle
+    </p>
+    <p>
+      <b>R: Shorbow +7 vs AC</b> 6 damage
+    </p>
+    <p>
+      <b>Dagger +6 vs AC</b> 4 damage
+    </p>
+  </div>
+
+  <h2 class="subtitle" onclick="toggleHidden(dragonborn_berserker13)">Dragonic Berserker: 1st level troop [humanoid]</h2>
+  <div id="dragonborn_berserker13"  class="hidden">
+    <p> <i>A more melee oriented dragonic warrior. First appeared in "A gathering storm". </i></p>
+
+      <p>Initiative +4</p>
+      <p>
+      <table class="stat-block-text-table-thirteen">
+        <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">15</td>
+        <td>PD </td><td class="stat-block-left"> 13</td>
+        <td>MD </td><td class="stat-block-left"> 10</td>
+        <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">33</td> </tr>
+      </table>
+      </p>
+      <p>
+        <b>C: Breath weapon +5 vs PD (one nearby enemy, quick action) </b> 3 acid damage</br>
+        &emsp;<i>Limited use:</i> Once per battle
+      </p>
+      <p>
+        <b>Greatclub +8 vs AC</b> 5 damage</br>
+        &emsp;<i>Natural odd miss:</i> If the berserker is staggered, 2 damage
+      </p>
+
+    </div>
+
+
+    <h2 class="subtitle" onclick="toggleHidden(dragonborn_warlock13)">Dragonic evil mage: Double-strength level 2 caster [humanoid]</h2>
+    <div id="dragonborn_warlock13"  class="hidden">
+      <p><i>A warlock type, associated with an evil icon. Also is dragonic, arbitrarily. But you could just drop the breath weapon. First appeared in "A gathering storm".</i></p>
+
+        <p>Initiative +3 </br>Vulnerability: holy</p>
+
+        <p>
+        <table class="stat-block-text-table-thirteen">
+          <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">22</td>
+          <td>PD </td><td class="stat-block-left"> 12</td>
+          <td>MD </td><td class="stat-block-left"> 16</td>
+          <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">72</td> </tr>
+        </table>
+        </p>
+        <p>
+          <b>C: Breath weapon +5 vs PD (one nearby enemy, quick action) </b> 3 acid damage</br>
+          &emsp;<i>Limited use:</i> Once per battle
+        </p>
+        <p>
+          <b>Staff +6 vs AC</b> 8 damage</br>
+          &emsp;<i>Natural even hit:</i> 3 negative energy danamage and the mage pops free.
+        </p>
+        <p class="stat-block-subheading">Icon actions: pick one as appropriat</p>
+
+        <p>
+          <b>C: Hell's Unholy Word +7 vas MD (1 nearby enemy)</b> 8 psychic damage</br>
+          &emsp;<i>Natural even hit:</i> the target is confused until the end of their next turn.
+        </p>
+        <p>
+          <b>C: The Grave's Withering Curse +7 vs PD (one nearby enemy)</b> 8 negative energy damage</br>
+          &emsp;<i>Natural even hit:</i> ongoing negative energy damage equal to 4 + the escalation die.
+        </p>
+        </div>
+
+  <h2 class="subtitle" onclick="toggleHidden(giant_sundew13)">Giant Sundew: Level 2 spoiler [plant]</h2>
+  <div id="giant_sundew13"  class="hidden">
+    <p><i> A sundew is a carnivorous plant that lives in bogs with sticky leaves. First appeared in "Don't get bogged down!"</i></p>
+      <p>Initiative +4</p>
+      <p>
+      <table class="stat-block-text-table-thirteen">
+        <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">18</td>
+        <td>PD </td><td class="stat-block-left"> 16</td>
+        <td>MD </td><td class="stat-block-left"> 12</td>
+        <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">36</td> </tr>
+      </table>
+      </p>
+      <p>
+        <b>C: Sticky leaves + 7 vs AC  </b>  3 ongoing acid damage and the target is stuck (save ends both).
+         If already stuck, the target is dazed as well; if already dazed, the target is stunned.
+         These conditions also end if the Giant Sundew dies.
+      </p>
+      <p><i>Stationary:</i>The Giant Sundew doesn’t move. It takes a hard check to notice it’s not a normal plant. They basically are like traps.
+      </p>
+    </div>
+
+    <h2 class="subtitle" onclick="toggleHidden(bogtree_13)">Awakened bog-tree: Level 2 mook [plant]</h2>
+    <div id="bogtree_13"  class="hidden">
+      <p><i> Basically an awakened tree but smaller. First appeared in "Don't get bogged down!"</i></p>
+        <p>Initiative +2</p>
+        <p>
+        <table class="stat-block-text-table-thirteen">
+          <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">18</td>
+          <td>PD </td><td class="stat-block-left"> 16</td>
+          <td>MD </td><td class="stat-block-left"> 12</td>
+          <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">36</td> </tr>
+        </table>
+        </p>
+        <p>
+          <b>Lashing branches: +7 vs AC  </b> 5 damage
+        </p>
+        <p><i>Hardwood Resistance:</i> This creature has resist damage 12+ to all damage except fire damage and melee weapon damage, which damages it normally.
+        </p>
+      </div>
+
+      <h2 class="subtitle" onclick="toggleHidden(bogcorpse_13)">Ancient bog-corpse: Level 2 spoiler [undead]</h2>
+      <div id="bogcorpse_13"  class="hidden">
+        <p><i> An ancient corpse, mummified by the bog, come back to life to drag the living under. First appeared in "Don't get bogged down!"</i></p>
+          <p>Initiative +5</p>
+          <p>
+          <table class="stat-block-text-table-thirteen">
+            <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">18</td>
+            <td>PD </td><td class="stat-block-left"> 16</td>
+            <td>MD </td><td class="stat-block-left"> 12</td>
+            <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">9</td> </tr>
+          </table>
+          </p>
+          <p>
+            <b>Grasping claws +9 vs AC  </b> 5 damage</br>
+                      &emsp;<i>Natural even hit:</i> the target is grabbed
+          </p>
+          <p>
+            <b>Drown +7 vs PD (one enemy it's grabbing adjacent to water)  </b> 10 damage and the target is dazed</br>
+          </p>
+        </div>
+
+        <h2 class="subtitle" onclick="toggleHidden(bogbeast_13)">Ancient Bog Beast: Huge level 2 troop [undead]</h2>
+        <div id="bogbeast_13"  class="hidden">
+          <p><i> A mummified mammonth. Rampages around hitting everything in its path. First appeared in "Don't get bogged down!"</i></p>
+            <p>Initiative +4</p>
+            <p>
+            <table class="stat-block-text-table-thirteen">
+              <tr><td class="stat-block-emphasized">AC </td><td class="stat-block-emphasized stat-block-left">15</td>
+              <td>PD </td><td class="stat-block-left"> 13</td>
+              <td>MD </td><td class="stat-block-left"> 10</td>
+              <td class="stat-block-emphasized">HP </td><td class="stat-block-emphasized stat-block-left">108</td> </tr>
+            </table>
+            </p>
+            <p>
+              <b>C: Tusks +10 vs AC (up to 3 nearby enemies in a group)  </b> 5 damage</br>
+                        &emsp;<i>Natural even hit:</i> 5 additional damage and pops free
+            </p>
+          </div>
+
+</div>
 </div>
 <div id="updated">
 <p><font size="1"> Updated March 2021</font></p>

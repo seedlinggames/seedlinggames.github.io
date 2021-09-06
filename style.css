@@ -96,16 +96,23 @@ margin-left:30;
 
 
 
-table, th, td {
+.table-language {
   border: 1px solid black;
   border-collapse: collapse;
-
 }
 
-td {
+.table-language th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-language td {
 
     padding: 5px;
     padding-left:20px;
+
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 .cover-image {
@@ -161,13 +168,22 @@ td {
      border-radius: 5px;
 }
 
+.button-unselected {
+    background-color:#f6ecd3;
+    color:black;
+    margin: 5;
+    padding: 5 20 5 20;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     box-shadow: 1px 1px 1px grey;
+     border-radius: 5px;
+}
+
 .bulletlist {
   line-height: 2;
 }
 
-.stat-block-text-table {
-    border: none !important;
-}
 .stat-block-subheading {
   font-style: italic;
   font-weight: bold;
@@ -176,6 +192,47 @@ td {
 
 .stat-block-text-table-subject {
   font-weight: bold;
+}
+
+.stat-block-text-table {
+      border: 1px solid black;
+      border-collapse: collapse;
+}
+
+
+
+.stat-block-text-table td {
+      padding: 5px;
+      padding-left:20px;
+}
+
+.stat-block-six-stats td {
+      padding: 5px;
+      padding-left:20px;
+        background-color:#e0d6ba;
+}
+
+
+.stat-block-text-table-thirteen {
+      border: 1px solid black;
+      border-collapse: collapse;
+}
+
+.stat-block-text-table-thirteen td {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+}
+
+.stat-block-emphasized {
+  background-color:#e0d6ba;
+    font-weight: bold;
+    border:0px;
+}
+
+.stat-block-left {
+  padding-left: 5px;
+  padding-right: 20px;
 }
 
 .hidden {
