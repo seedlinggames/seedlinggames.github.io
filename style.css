@@ -250,3 +250,12 @@ margin-left:30;
 .visible {
     display:block;
 }
+
+.revue-form-element {
+  padding: 5px;
+}
+
+.revue-form {
+  text-align: center;
+  padding: 20px;
+}
