@@ -81,6 +81,12 @@ margin-left:30;
  box-shadow: 1px 1px 1px grey;
 }
 
+.outofcharacter {
+  background:lightgrey;
+  font-style: italic;
+  padding-left:15;
+}
+
 .cover-image-container {
     width:250px;
     padding:10px;
