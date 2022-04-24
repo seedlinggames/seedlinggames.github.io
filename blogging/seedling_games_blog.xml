@@ -6,43 +6,54 @@
   <link>https://seedlinggames.github.io/blog.html</link>
   <description>On creating, publishing and playing TTRPGs. Also worldbuilding. </description>
   <language>en-ca</language>
-  <pubDate>Fri, 18 Mar 2022</pubDate>
-
+  <item>
+    <title>Using PTDTPA with Wanderhome</title>
+    <link>https://seedlinggames.github.io/blogging/extras/wanderhome_for_PFLTPA.html</link>
+    <description>Adapting Procedures to Discover the Path Ahead for Wanderhome.</description>
+    <category>Misc</category>
+    <pubDate>Sat, Apr 23 2022</pubDate>
+  </item>
   <item>
     <title>On Fantasy Heartbreakers, Feedback and Advice</title>
     <link>https://seedlinggames.github.io/blogging/business/fantasy_heartbreakers.html</link>
     <description>Various thoughts on advice given to people writing TTRPG material, and its limitations.</description>
     <category>Industry</category>
+    <pubDate>Fri, 18 Mar 2022</pubDate>
   </item>
   <item>
     <title>My First Printed Game</title>
     <link>https://seedlinggames.github.io/blogging/business/my_first_physical_game.html</link>
     <description>In which I describe my experiences making physical copies of a game for the first time.</description>
     <category>Industry</category>
+    <pubDate>Fri, 18 Mar 2022</pubDate>
   </item>
   <item>
     <title>The Common Tongue</title>
     <link>https://seedlinggames.github.io/blogging/worldbuilding/the_common_tongue.html</link>
     <description>Why might everyone in a world speak the same language? One possible explanation.</description>
     <category>Worldbuilding</category>
+    <pubDate>Fri, 18 Mar 2022</pubDate>
   </item>
   <item>
     <title>The Cold Lands</title>
     <link>https://seedlinggames.github.io/blogging/worldbuilding/the_cold.html</link>
     <description>A quick, standalone setting in a deadly, frozen world.</description>
     <category>Worldbuilding</category>
+    <pubDate>Fri, 18 Mar 2022</pubDate>
   </item>
   <item>
     <title>Cool Places Part 2: The Desert</title>
     <link>https://seedlinggames.github.io/blogging/writing/locations_part_2.html</link>
     <description>In which I blog about my vacation, but tie it to TTRPGs to get people to look at my vacation photos.</description>
     <category>Misc</category>
+    <pubDate>Fri, 18 Mar 2022</pubDate>
   </item>
   <item>
     <title>Cool Places Part 1: Sand, Sea and Scrubland</title>
     <link>https://seedlinggames.github.io/blogging/writing/locations_part_1.html</link>
     <description>Some real-world places that inspire my TTRPG writing.</description>
     <category>Misc</category>
+    <pubDate>Fri, 18 Mar 2022</pubDate>
   </item>
 </channel>
 </rss>
