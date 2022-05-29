@@ -28,6 +28,7 @@ body{
 #banner_img {
   width:900px;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 #updated {
@@ -47,6 +48,9 @@ body{
 }
 
 .title {
+
+    text-align: center;
+  margin-top:30;
 background:#a3b9c9;
 color:#000000
 font-family: hammersmith, serif;
@@ -61,10 +65,10 @@ padding-left:15;
 .subtitle {
 background:#a3b9c9;
 color:#000000
-font-family: hammersmith, serif;
 font-size: large;
 
   font-style: italic;
+
 padding:5;
 padding-left:15;
  box-shadow: 2px 2px 2px grey;
@@ -92,7 +96,6 @@ margin-left:30;
     padding:10px;
     border-radius: 5px;
     display: inline-block;
-    background-color: #b9c9c3;
     margin: 10px;
 
      box-shadow: 2px 2px 2px 2px grey;
@@ -162,9 +165,8 @@ margin-left:30;
 
 .button-bar {
   text-align: center;
-   box-shadow: 2px 2px 2px grey;
+   box-shadow: 2px 2px 2px 2px grey;
    border-radius: 5px;
-  background-color: #b9c9c3;
   margin-top: 10;
   margin-bottom: 10;
 }
@@ -173,8 +175,8 @@ margin-left:30;
 .button {
     background-color:#41314a;
     color:#FFFFFF;
-    margin: 5;
-    padding: 5 20 5 20;
+    margin: 10;
+    padding: 7 20 7 20;
     text-align: center;
     text-decoration: none;
     display: inline-block;
