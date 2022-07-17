@@ -63,8 +63,8 @@ padding-left:15;
 }
 
 .subtitle {
-background:#a3b9c9;
-color:#000000
+background:#184031;
+color:#FFFFFF;
 font-size: large;
 
   font-style: italic;
@@ -76,7 +76,7 @@ padding-left:15;
 }
 
 .subsubtitle {
-  background:lightgrey;
+  background:#709789;
 font-family: hammersmith, serif;
 font-size: large;
 padding:5;
