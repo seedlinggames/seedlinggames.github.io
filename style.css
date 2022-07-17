@@ -215,6 +215,10 @@ margin-left:30;
       border-collapse: collapse;
 }
 
+.table-caption {
+  padding:10px;
+  font-size: large;
+}
 
 
 .stat-block-text-table td {

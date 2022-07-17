@@ -6,9 +6,17 @@
   <link>https://seedlinggames.github.io/blog.html</link>
   <description>On creating, publishing and playing TTRPGs. Also worldbuilding. </description>
   <language>en-ca</language>
+
+  <item>
+    <title>Momentum-based Combat</title>
+    <link>https://seedlinggames.github.io/blogging/wip/momentum_based_combat.html</link>
+    <description>A first draft of a new combat system using only random tables and a momentum counter.</description>
+    <category>WIP</category>
+    <pubDate>Thu, July 17 2022</pubDate>
+  </item>
   <item>
     <title>Supernatural Transformations in Cairn</title>
-    <link>https://seedlinggames.github.io/blogging/writing/types_of_people_cairn.html</link>
+    <link>https://seedlinggames.github.io/blogging/wip/types_of_people_cairn.html</link>
     <description>A first draft of DnD-style races as supernatural transformations that humans undergo, roughly for Cairn.</description>
     <category>WIP</category>
     <pubDate>Thu, June 30 2022</pubDate>
