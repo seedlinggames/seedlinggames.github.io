@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Antagonistic monsters: the bugbear</title>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+<div class="blog">
+<div id="main">
+  <a href="../../index.html"><img  id="banner_img" src="../../images/logo_draft_purply_lighter_banner_long.png" alt="Banner saying 'Seedling' in stylized plants"/></a>
+  <div class=button-bar>
+  <a class=button href="../../email.html">Mailing list</a>
+  <a class=button href="https://twitter.com/SeedlingGames">Twitter</a>
+  <a class=button href="https://seedling.itch.io/">Itch.io</a>
+  <a class=button href="https://www.drivethrurpg.com/browse/pub/17569/Seedling-Games?src=personalsite">DriveThru RPG</a>
+  </div>
+  <div class=button-bar>
+  <a class=button href="../../letatuje/letatuje.html">🦖 Létatujé</a>
+  <a class=button href="../../blog.html">🎲 Blog</a>
+  <a class=button href="../../srd/srd.html"> 👹 OGL stat blocks</a>
+  <a class=button href="../../blogging/business/low_cost_resources.html">📔 Resources</a>
+  <a class=button href="../../webring.html">🔗 Webring</a>
+
+  </div>
+  <h2 class="title">Momentum based combat v1</h2>
+
+  <p> This is very much a work in progress, but it's something that I am actively working on. It's motivated by the desire to do at least some of the following:
+    </p>
+    <ul>
+      <li>Run combat where different things happen from round to round, but not too fiddly or with too much to keep track of, and also take several rounds</li>
+      <li>Have the combat be something which I can imagine in my head, and think about the fiction rather than the numbers</li>
+      <li>Have getting stabbed be very deadly, without necessarily having a high death rate</li>
+      <li>Do something outside of the D&D lineage (and also the PbtA lineage)</li>
+      <li>Works for solo and GMless games</li>
+    </ul>
+
+    <h2 class="subtitle">Basic concept</h2>
+
+
+    <p>You and your opponent each have a <i>momentum</i> counter. It starts at zero, and cannot go below zero. Each round, you pick an item or strategy to use, which has a corresponding table, with entries from 1 to 10. NPCs have one table to choose from. Then, you and your opponent roll a six sided die, add your respective momentum value, and look it up on the table. The table gives you a short and open-ended prompt for what has happened, and a mechanial effect, usually to increase or decrease momentum counters.</p>
+
+<p>You need to roll 10+ to defeat your opponent, but since you roll a six sided die, you have to first increase your momentum counter to do so. Depending on the context, each roll could represent just a split section of action of probing each other's weaknesses and finding an opportunity to go for the kill.</p>
+
+      <p>I don't currently know of any games which take this approach, but I'd be very interested in hearing about any which do.</p>
+
+      <p>Right now I'm considering battles with two enemies, although I plan to try and figure out how to handle more.</p>
+
+
+      <h2 class="subtitle">Simple Version</h2>
+<p>First I tested out just one option for the player: attack with a sword; and one enemy, a wolf. My experience playtesting this is it feels a lot more like a solo journaling game: typically in those games you draw and interpret random events, but may not have many decisions to make other than creating a story around the prompts.</p>
+
+<table class="stat-block-text-table">
+  <caption class="table-caption">Sword</caption>
+<tbody>
+<tr class="stat-block-text-table-subject"><td>Total</td><td>Description</td><td>Effect</td></tr>
+<tr><td>1 </td><td>Misjudge</td><td>+1 to enemy</td></tr>
+<tr><td>2</td><td>Standoff</td><td>- </td></tr>
+<tr><td>3</td><td>Find advantage</td><td>+1 to self</td></tr>
+<tr><td>4</td><td>Risky advantage</td><td>+2 to self, +1 to enemy</td></tr>
+<tr><td>5</td><td>Standoff</td><td>-</td></tr>
+<tr><td>6</td><td>Glancing hit</td><td>+2 to self</td></tr>
+<tr><td>7</td><td>Create opening</td><td>+1 to self</td></tr>
+<tr><td>8</td><td>Draw blood</td><td>+3 to self</td></tr>
+<tr><td>9</td><td>Mistake</td><td>+2 to enemy</td></tr>
+<tr><td>10+</td><td>Victory</td><td></td></tr>
+</tbody>
+</table><br/>
+
+<table class="stat-block-text-table">
+  <caption class="table-caption">Wolf</caption>
+<tbody>
+  <tr class="stat-block-text-table-subject"><td>Total</td><td>Description</td><td>Effect</td></tr>
+<tr><td>1 </td><td>Off-guard</td><td>+1 to enemy</td></tr>
+<tr><td>2</td><td>Lunge</td><td>+1 to self </td></tr>
+<tr><td>3</td><td>Manoever</td><td>-1 to enemy</td></tr>
+<tr><td>4</td><td>Threaten</td><td>+1 to self</td></tr>
+<tr><td>5</td><td>Retreat</td><td>-1 to self, -1 to enemy</td></tr>
+<tr><td>6</td><td>Overwhelm</td><td>+2 to self</td></tr>
+<tr><td>7</td><td>Standoff</td><td>-</td></tr>
+<tr><td>8</td><td>Grapple or impede</td><td>-2 to enemy</td></tr>
+<tr><td>9</td><td>Mistake</td><td>+2 to enemy</td></tr>
+<tr><td>10+</td><td>Victory</td><td></td></tr>
+</tbody>
+</table>
+
+
+ <h2 class="subtitle">A little more complicated</h2>
+
+ <p>Next I added two more tables. The first is for retreating. Some thoughts about this:</p>
+<ul>
+ <li>Anyone can retreat. </li>
+ <li>In the future, though, there might be other movement or manoever tables which are player-specific, or which are associated with certain types of training. Note that the wolf has manoever entries already in its one table. </li>
+ <li>When retreating, you want your momentum as low as possible. You can't successfully retreat when momentum is 5 or higher.</li>
+ <li>This means that if you are doing really badly, retreating is a good option. While maybe not super realistic, it makes the game more forgiving.</li>
+ <li>If you choose to retreat, in general you will make it harder to win. I did in one playtest have an unlikely comeback, but generally it's a commitment to giving up.</li>
+ <li>I like the fact that this hasn't actually introduced a new mechanic, just used existing ones in a new way.</li>
+ </ul>
+
+
+ <table class="stat-block-text-table">
+   <caption class="table-caption">Retreat. Unless you roll a 1 or 2, if you are killed or incapacitated this round, that takes precedence.
+</caption>
+ <tbody>
+   <tr class="stat-block-text-table-subject"><td>Total</td><td>Description</td><td>Effect</td></tr>
+ <tr><td>1 </td><td>Get away clean no matter what</td><td>+1 to enemy</td></tr>
+ <tr><td>2</td><td>Get away clean no matter what</td><td>+1 to self </td></tr>
+ <tr><td>3</td><td>Get away</td><td>-1 to enemy</td></tr>
+ <tr><td>4</td><td>Get away, but take a condition or lose something</td><td>+1 to self</td></tr>
+ <tr><td>5</td><td>Get away, but take a condition or lose something</td><td>-1 to self, -1 to enemy</td></tr>
+ <tr><td>6</td><td>Fail</td><td>-1 to self, -2 to enemy</td></tr>
+ <tr><td>7</td><td>Fail</td><td> -1 to self, -1 to enemy</td></tr>
+ <tr><td>8</td><td>Fail</td><td>-2 to self</td></tr>
+ <tr><td>9+</td><td>Fail</td><td>-3 to self</td></tr>
+ </tbody>
+ </table>
+
+<p>An entry for using a shield - or maye just fighting defensively - is a lot more straightforward. Unlike attacking with a sword, you are generally decreasing the enemy's momentum rather than increasing yours: making it harder for the enemy to kill you rather than easier for you to kill your enemy.  Also, because you are are applying it to the enemy's momentum, if you had an ally, you could in the fiction be shielding your ally with no special rules needed.</p>
+
+ <table class="stat-block-text-table">
+   <caption class="table-caption">Shield</caption>
+ <tbody>
+   <tr class="stat-block-text-table-subject"><td>Total</td><td>Description</td><td>Effect</td></tr>
+ <tr><td>1 </td><td>Off-guard</td><td>+1 to enemy</td></tr>
+ <tr><td>2</td><td>Fall back</td><td>-1 to enemy </td></tr>
+ <tr><td>3</td><td>Dodge</td><td>-1 to enemy </td></tr>
+ <tr><td>4</td><td>Block</td><td>-1 to enemy </td></tr>
+ <tr><td>5</td><td>Bash</td><td>1 to you, -1 to enemy</td></tr>
+ <tr><td>6</td><td>Fall back</td><td>-2 to self, -1 to enemy</td></tr>
+ <tr><td>7</td><td>Deflect </td><td>-1 to enemy</td></tr>
+ <tr><td>8</td><td>Knock off balance</td><td>-2 to enemy</td></tr>
+ <tr><td>9</td><td>Break shield</td><td>Cannot use this table again</td></tr>
+ <tr><td>10+</td><td>Disarm, knock prone, etc</td><td>Enemy momentum set to 0</td></tr>
+ </tbody>
+ </table>
+
+ <h2 class="subtitle">Things I might explore next</h2>
+
+<ul>
+  <li>Make a short solo adventure that's actually playable so that other people can try it and see if it's fun.</li>
+  <li>Try to make more varied monsters and see if I can make them feel notably different, in particular how to make them more or less dangerous.</li>
+  <li>Test with more than two creatures in a fight.</li>
+  <li>Figure out how to make other items or techniques. "Sword" will probably end up being generalized a bit in some way. Maybe if used two-handed, there's a second stance you can use.</li>
+  <li>I have an idea as to how to handle a notion of distance, but that ends up adding another type of state to keep track of. Weapons will work at different distances, and there will be a separate table for moving between distances. I have no idea if this will work, if it'll be fun, or if it will just be too complicated.</li>
+  <li>Experiment with using different sized dice to represent skill.</li>
+  <li>Experiment with different tables that have only positive options that you can choose between. This might tie into having tables around manoevering and moving between distances.</li>
+</ul>
+
+
+  </div>
+  <div id="updated">
+  <p><font size="1"> Written July 10 2022</font></p>
+  </div>
+  </html>
