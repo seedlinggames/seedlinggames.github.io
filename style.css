@@ -158,6 +158,7 @@ margin-left:30;
 }
 
 
+
 .chart-image {
     width:650px;
     padding:5;
@@ -212,7 +213,32 @@ margin-left:30;
   border: 1px solid black;
   padding: 5 20 5 20;
   margin: 20 0 20 0;
+  display: flex;
 }
+
+.charblock-column {
+  margin: 0 20 0 0;
+}
+
+.blog-image-portrait {
+  width:250px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+  align-self: center;
+}
+
+.stat-block-community-table {
+  border-spacing: 0px 10px;
+  font-size: medium;
+  vertical-align: top;
+}
+
+.stat-block-community-table td{
+  vertical-align: top;
+  padding-left: 20px;
+}
+
 
 .stat-block-subheading {
   font-style: italic;
