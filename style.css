@@ -1,14 +1,12 @@
 html,body{margin:10;padding:10;}
 body{
-    font-size: 18pt;
+    font-size: 20pt;
     font-family: alice, serif;
     background:#41314a;
     text-align: left;
 
   line-height: 1.5;
   }
-
-
 
   ol{
     padding-left: 60;
@@ -58,7 +56,7 @@ background:#184031;
 color:#FFFFFF;
 font-family: hammersmith, serif;
 font-weight: bold;
-font-size: 30pt;
+font-size: 34pt;
 padding:5;
 padding-left:15;
 box-shadow: 2px 2px 2px grey;
@@ -68,7 +66,7 @@ border-radius: 5px;
 .subtitle {
 background:#184031;
 color:#FFFFFF;
-font-size: 24pt;
+font-size: 28pt;
 
 font-style: italic;
 
@@ -81,7 +79,7 @@ border-radius: 5px;
 .subsubtitle {
 background:#709789;
 font-family: hammersmith, serif;
-font-size: 20pt;
+font-size: 24pt;
 padding:5;
 padding-left:15;
 box-shadow: 1px 1px 1px grey;
