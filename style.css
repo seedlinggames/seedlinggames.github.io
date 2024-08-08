@@ -1,6 +1,6 @@
 html,body{margin:10;padding:10;}
 body{
-    font-size: 14pt;
+    font-size: 18pt;
     font-family: alice, serif;
     background:#41314a;
     text-align: left;
@@ -38,7 +38,7 @@ body{
 }
 
 .blog-image-large {
-  width100%;
+  width:100%;
   padding:5;
   margin: 0px 0px 15px 15px;
 }
@@ -50,47 +50,56 @@ body{
   margin-right: auto;
 }
 
+.title {
 
-@media (min-width: 700px) { 
-    .blog {
-      max-width:500px;
-      margin: 0 auto;
-    }
-    #banner_img {
-      width:500px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
+  text-align: center;
+margin-top:30;
+background:#184031;
+color:#FFFFFF;
+font-family: hammersmith, serif;
+font-weight: bold;
+font-size: 30pt;
+padding:5;
+padding-left:15;
+box-shadow: 2px 2px 2px grey;
+border-radius: 5px;
+}
 
-    .blog-image-medium {
-      width:500px;
-      padding:5;
-      margin: 0px 0px 15px 15px;
-  }
+.subtitle {
+background:#184031;
+color:#FFFFFF;
+font-size: 24pt;
 
-  .blog-image-large {
-      width:500px;
-      padding:5;
-      margin: 0px 0px 15px 15px;
-  }
+font-style: italic;
 
-  .blog-image-heading {
-      width:500px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
+padding:5;
+padding-left:15;
+box-shadow: 2px 2px 2px grey;
+border-radius: 5px;
+}
+
+.subsubtitle {
+background:#709789;
+font-family: hammersmith, serif;
+font-size: 20pt;
+padding:5;
+padding-left:15;
+box-shadow: 1px 1px 1px grey;
+}
 
 
-  .chart-image {
-      width:500px;
-      padding:5;
-  }
-
-} 
  
 /* Styles for screens larger than 1200px */ 
 @media (min-width: 1200px) { 
+
+    body{
+      font-size: 14pt;
+      font-family: alice, serif;
+      background:#41314a;
+      text-align: left;
+
+    line-height: 1.5;
+    }
     .blog {
       max-width:900px;
       margin: 0 auto;
@@ -132,27 +141,7 @@ body{
     padding-right:30;
   }
 
-} 
-
-
-
-#updated {
-    font-size:1;
-    font-family: helvetica, arial, sans-serif;
-    color:#FFFFFF;
-    float:left;
-
-}
-
-.hidden {
-    display:none;
-}
-
-.visible {
-    display:block;
-}
-
-.title {
+  .title {
 
     text-align: center;
   margin-top:30;
@@ -189,6 +178,28 @@ padding-left:15;
 margin-left:30;
  box-shadow: 1px 1px 1px grey;
 }
+
+
+} 
+
+
+
+#updated {
+    font-size:1;
+    font-family: helvetica, arial, sans-serif;
+    color:#FFFFFF;
+    float:left;
+
+}
+
+.hidden {
+    display:none;
+}
+
+.visible {
+    display:block;
+}
+
 
 .outofcharacter {
   background:lightgrey;
