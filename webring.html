@@ -1,8 +1,10 @@
 <html>
 <head>
-<title>Resources</title>
+<title>Webring</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="utilities.js" type="text/javascript"></script> 
 </head>
+
 <div class="blog">
 <div id="main">
   <a href="index.html"><img  id="banner_img" src="images/logo_draft_purply_lighter_banner_long.png" alt="Banner saying 'Seedling' in stylized plants"/></a>
@@ -34,57 +36,162 @@ happy, so you can have some fun with it.</p>
 
   We've got a general interest in a DIY attitude (maybe?), solo games (though not exclusively), low pressure collaboration, helping each other learn, still figuring out what we are. But all cool people whose games you should check out.
 
-  <ul>
-    <li>
-      <a href="http://blog.forestcritter.com/">Forest Critter</a>: Alex Meyer's projects and solo actual plays
-    </li>
-    <li>
-      <a href="https://eskur.dev/">Eskur</a>: Games and blog posts, with a lot on Blades in the Dark (but not exclusively)
-    </li>
-    <li>
-      <a href="https://www.hedonic.ink/"> Hedonic ink </a>: Games and blog posts: lots on solo games and game design
-    </li>
-    <li>
-      <a href="https://tonytrandesign.com/"> Tony Tran Designk </a>: Art!
-    </li>
-  </ul>
+  <ul id="soup"></ul>
 
-<!-- TODO add in some code that randomly shuffles the list-->
+  <script>
+    var entries = [
+      {url:"http://blog.forestcritter.com/", title:"Forest Critter", text:"Alex Meyer's projects and solo actual plays"}, 
+      {url:"https://eskur.dev/", title:"Eskur", text:"Games and blog posts, with a lot on Blades in the Dark (but not exclusively)"}, 
+      {url:"https://www.hedonic.ink/", title:"Hedonic Ink", text:"Games and blog posts: lots on solo games and game design"}, 
+      {url:"https://tonytrandesign.com/", title:"Tony Tran Design", text:"Art!"}, 
+  ]
+  printShuffledList(entries, document.getElementById("soup"), document)
+
+  </script>
+
+
 <p class="title">Other cool people</p>
 
-<ul>
-  <li>
-    <a href="https://arnamantle.com/">Arnamantle</a> - "Articles, RPG Works, Fiction in Many Forms". Recently, some blog pots on indie game design.
-  </li>
-  <li>
-    <a href="https://brain-implant.tech/">Brain Implant</a> - List of their many games + explanations, non-game writing and a blog (CaffeinatedOtter on twitter)
-  </li>
-  <li>
-    <a href="https://www.hessanscounty.com/">Hessan's County</a> - "Explore World-building, Media, and Tabletop Roleplaying games with us one page at a time." Discussion of their own games and others', as well as adjacent media.
-  </li>
-  <li>
-    <a href="https://anya.reyescon.de/directory/">General nerdness</a> - "Maths, RPGs, Boardgames & Coding." I like the blog posts on dungeon design. In Spanish as well!
-  </li>
-  <li>
-    <a href="https://oldskull-publishing.com/">Old Skull Publishing</a> - Info on games and other work by Ennie award-winning game creator and artist Diogo Nogueira, and his blog.
-  </li>
-  <li>
-    <a href="https://jazzsequence.com/">jazzsequence</a> - Flash fiction, music, some cool coding projects, and miscellaneous blog posts.
-  </li>
-  <li>
-    <a href="https://www.ragekagerugger.com/">Kage</a> - info on her streaming and podcasts, TTRPG publications and other creative endeavours (including needlepoint!)
-    </li>
-    <li>
-      <a href="https://troika-srd.netlify.app/">Troika! SRD adapted by dialectrical</a> Not a personal website per se, but a cool re-layouting of the Troika! SRD written from scratch.
-      </li>
+<p>People's personal websites, often from within the general Mastodon/DIY sphere. If we're mutuals feel free to ask to be added.</p>
+
+<ul id="general_sites">
 </ul>
+
+<script>
+  var entries = [
+  {url:"https://arnamantle.com/", title:"Arnamantle", text:"\"Articles, RPG Works, Fiction in Many Forms\". Recently, some blog posts on indie game design."}, 
+  {url:"https://brain-implant.tech/", title:"Brain Implant", text:"List of their many games + explanations, non-game writing and a blog (CaffeinatedOtter online)"}, 
+  {url:"https://www.hessanscounty.com/", title:"Hessan's County", text:"\"Explore World-building, Media, and Tabletop Roleplaying games with us one page at a time.\" Discussion of their own games and others', as well as adjacent media."}, 
+  {url:"https://anya.reyescon.de/directory/", title:"General nerdness", text:"\"Maths, RPGs, Boardgames & Coding.\" I like the blog posts on dungeon design. In Spanish as well! (may now be down?)"}, 
+  {url:"https://oldskull-publishing.com/", title:"Old Skull Publishing", text:"Info on games and other work by Ennie award-winning game creator and artist Diogo Nogueira, and his blog."}, 
+  {url:"https://www.ragekagerugger.com/", title:"Kage", text:"info on her streaming and podcasts, TTRPG publications and other creative endeavours (including needlepoint!)"}, 
+  {url:"https://troika-srd.netlify.app", title:"Troika! SRD adapted by dialectrical", text:"Not a personal website per se, but a cool re-layouting of the Troika! SRD written from scratch."}, 
+
+]
+printShuffledList(entries, document.getElementById("general_sites"), document)
+
+</script>
+
+<p class="title">Select blog posts I follow</p>
+
+<p>This isn't a complete list - I've mostly omitted people who I think someone reading this page will likely already know about, but this is a very unscientific process of guessing how much I see their names on social media, as someone who no longer spends very much time on social media.</p>
+
+
+<p class="subtitle">Infrequently or no longer updated</p>
+
+
+<p>Here are some infrequently updated blog posts (last update > 6 months ago, or explicitly described as no longer updated). Some may never be updated again, but I found them interesting, at one time. Others will probably get an update in another 6 months. We've all been there. The good news is you can read through their backlogs pretty quickly.</p>
+<ul id="infrequent">
+</ul>
+
+
+<script>
+var entries = [
+{url:"https://eskur.dev", title:"eskur.dev", text:"Blades in the dark, blog posts, indie games"},
+{url:"https://cigeengine.blogspot.com", title:"Cige Engine", text:"Post-OSR, Ultraviolet Grasslands"},
+{url:"https://wyrdlands.blogspot.com/", title:"The Wyrd Lands", text:"FKR type games, system neutral adventures, random generators, very specific medieval stuff"},
+{url:"https://straitsofanian.blogspot.com", title:"Straits of Anián", text:"\"Old school roleplaying material for the mythic Pacific Northwest.\""},
+{url:"https://songsofsibylline.wordpress.com/", title:"Songs of Sibylline", text:"NSR-adjacent thoughts on a variety of subjects"},
+{url:"https://rest.blot.im/", title:"Traveler's Rest", text:"Modern OSR-adjacent game design with storygame influences"},
+{url:"https://scrtgm.blogspot.com", title:"The Secret Game - Il Gioco Segreto ", text:"Posting about Cairn, mostly"},
+{url:"https://boneboxchant.wordpress.com/", title:"The Bone Box Chant", text:"Lots of stuff about the very varied different types of games the author has been playing"},
+{url:"https://oysters-and-oubliettes.blogspot.com/", title:"Oysters and Oubliettes", text:"More NSR-type content"},
+{url:"https://sheepandsorcery.blogspot.com/", title:"Sheep and Sorcery", text:"General fantasy worldbuilding"},
+{url:"http://blog.forestcritter.com", title:"FOREST CRITTER", text:"A whole bunch of solo actual play games"}
+]
+printShuffledList(entries, document.getElementById("infrequent"), document)
+
+</script>
+
+<p class="subtitle">Writing-focused</p>
+<p>There's a lot of overlap here with other categories, but if you're particularly interested in writing (as a craft), here are some good ones. I'm looking for more blogs about solo journaling and in this category in general.</p>
+<ul id="writing">
+</ul>
+<script>
+var writing = [
+{url:"https://www.hedonic.ink", title:"Hedonic Ink", text:"A bunch of stuff, but a lot of stuff on journaling games and writing in general"},
+{url:"https://wasitlikely.blogspot.com/", title:"Was It Likely? ", text:"I have no idea how to descibe this (or categorize it, really)."},
+{url:"https://weirdwonderfulworlds.blogspot.com", title:"Weird & Wonderful Worlds ", text:"Somewhere on the more storygame friendly side of OSR (or vice versa), lots of cool weird lore"},
+{url:"http://newtyoung.com/", title:"wizard in the lighthouse ", text:"Worldbuilding and other weird content. Last year was a whole bunch of stuff about the sea."},
+]
+printShuffledList(writing, document.getElementById("writing"), document)
+
+</script>
+
+<p class="subtitle">NSR</p>
+<p>This is a pretty arbitrary category.</p>
+<ul id="nsr">
+</ul>
+<script>
+var nsr = [
+{url:"https://elmc.at/calendar-chronicles/", title:"AMONG CATS AND BOOKS", text:"Misc NSR type stuff: gameable ideas, a bunch of Dolmenwood lately"},
+{url:"https://dicegoblin.blog/", title:"Dice Goblin", text:"The person behind Block, Dodge, Parry for Cairn. More recently a bunch of moern setting stuff."},
+  {url:"https://blog.d4caltrops.com", title:"d4 Caltrops ", text:"Despite the name, go here for all your d100 table needs. All of them."},
+  {url:"https://paradisebunny.bearblog.dev/blog/", title:"Post-Mortem", text:"Reviews of games and adventures that the author has run. Largely on the NSR side of things."},
+  {url:"https://rolltodoubt.wordpress.com/", title:"Roll to Doubt", text:"FKR, advice on running games, playable content."},
+  {url:"https://bogblins.blogspot.com", title:"Bogblins", text:"Thoughts on NSR type games as the author develops a game based on Western Indian folkore."},
+  {url:"https://aloneinthelabyrinth.blogspot.com/", title:"Alone in the Labyrinth", text:"From the author of Pariah. Lots of play reports, game design stuff, solo game stuff, and other stuff you need for weird stone age adventures."},
+]
+printShuffledList(nsr, document.getElementById("nsr"), document)
+
+</script>
+
+<p class="subtitle">Glog and other classic OSR blog cultures</p>
+<p>This is a pretty arbitratry category as well. It's not necessarily GLOG blogs; it's one I feel have a GLOG vibe.</p>
+<ul id="glog">
+</ul>
+<script>
+var entries = [
+{url:"https://infernalpact.bearblog.dev/", title:"Infernal Pact ", text:"Mostly play reports of multi month campaigns, with miscellaenous other stuff, as well as Megadungeon Book Club, mostly OSR, lots of GLOG stuff."},
+{url:"https://spiceomancy.blogspot.com/", title:"Spiceomancy", text:"GLOG-ish gameable content"},
+{url:"https://deadtreenoshelter.blogspot.com/", title:"Dead Tree, No Shelter ", text:"Mostly GLOG-y gameable content"},
+{url:"https://quajzen.neocities.org", title:"QuasiWizard ", text:"A whole bunch of resources for OSR games, I don't know if this is still a blog or what."},
+{url:"https://thefieldsweknow.blogspot.com/", title:"The Fields We Know ", text:"\"Adventuring in low fantasy RPGs\", with an emphasis on worldbuilding and folkore."},
+{url:"https://tabletopcuriositycabinet.blogspot.com/", title:"Tabletop Curiosity Cabinet ", text:"\"Where I ramble about tabletop stuff from a DIY, rules lite perspective. \""},
+{url:"https://foreignplanets.blogspot.com", title:"Beneath Foreign Planets ", text:"\"OSR and TTRPG Ephemera\": mostly gameable content and lore and stuff, a lot of engaging with the larger blog community"},
+{url:"https://dungeonfruit.blogspot.com/", title:"Dungeonfruit", text:"Mostly gameable N/OSR type content wiht lots of great random tables, as well as advice on running games."},
+{url:"https://www.unlawful.games/", title:"Unlawful games", text:"A whole bunch of random tables and game lore"},
+{url:"https://loneknight.dreamwidth.org", title:"Lone Knight", text:"Bunch of random stuff, a lot of it gameable content around a simle OSR-ish game they wrote called Lindwyrm"},
+]
+printShuffledList(entries, document.getElementById("glog"), document)
+</script>
+
+
+<p class="subtitle">Reviews, play reports, written adventures</p>
+<p>There's some overlap with the others, but these are particularly focused on directly discussing games as they are played.</p>
+<ul id="playreports">
+</ul>
+<script>
+  var playreports = [
+{url:"https://solo.technoskald.me/", title:"Solo Skald", text:"Solo play reports, more on the OSR and wargaming side."},
+{url:"https://rpgwandering.wordpress.com/", title:"RPG Wandering", text:"Mostly short D&D adventures"},
+{url:"https://thecosmicorrery.blogspot.com/", title:"The Cosmic Orrery ", text:"Mostly play reports of OSR type games, with some gameable content."},
+{url:"https://root-devil.com/", title:"Root Devil", text:"NSR-y reviews, play reports and gameable content"},
+]
+printShuffledList(playreports, document.getElementById("playreports"), document)
+</script>
+
+<p class="subtitle">Theory and Academics</p>
+<p>These also talk about other things, but these are ones that are particularly focused on the theory of writing games, or incorporating academic research into games. I've omitted the famous ones although maybe my judgement on who is famous is incorrect.</p>
+<ul id="academic">
+</ul>
+<script>
+  var playreports = [
+{url:"https://liberludorum.com/", title:"Līber Lūdōrum", text:"\"Exploring the print & material culture of tabletop gaming.\" Reviews, game theory, useful resources for indie RPG writers."},
+{url:"https://majesticflywhisk.blogspot.com", title:"A Most Majestic Fly Whisk ", text:"Highly academic discussion of RPGs and also the history of the Congo and sometimes both"},
+{url:"https://levikornelsen.wordpress.com/", title:"Levi Kornelsen", text:"A lot of cross-genre thoughts on RPG design (i.e. going beyond just the storygame/OSR dichotomy)"},
+{url:"https://quarterlingscorner.blogspot.com/", title:"Quarterling’s Corner (Tim B)", text:"Thoughts on O/NSR games and \"conversation games (congas)\" (see also <a href=\"https://congas.blog/blog/\">Congas.blog</a>)"},
+{url:"https://moltensulfur.com/", title:"Molten Sulphur Blog", text:"\"Content for your RPG campaigns, drawn from history and folklore\""},
+]
+printShuffledList(playreports, document.getElementById("academic"), document)
+</script>
 
 
 
 </div>
 <div id="updated">
 <p><font size="1"> Written Oct 10 2021</font></p>
-<p><font size="1"> Updated April 22 2022</font></p>
+<p><font size="1"> Updated February 1 2025</font></p>
 </div>
 </div>
 </html>
