@@ -28,3 +28,21 @@
         otherButton.className = 'button';
       }
     }
+
+    function fisherYatesShuffle(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+
+    function printShuffledList(arr, ul, document) {
+        shuffled = fisherYatesShuffle(arr)
+        shuffled.forEach((item)=> {
+            li = document.createElement('li')
+            li.innerHTML = `<b><a href="${item.url}">${item.title}</a></b> - ${item.text}`
+            ul.appendChild(li)
+
+        });
+    }
