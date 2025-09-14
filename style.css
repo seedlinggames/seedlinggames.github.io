@@ -263,6 +263,11 @@ p{
     box-shadow: 2px 2px 2px grey;
     border-radius: 5px;
   }
+.subtitle a {  
+    color:#FFFFFF;
+}
+
+
 
   .subsubtitle {
     background:#709789;
