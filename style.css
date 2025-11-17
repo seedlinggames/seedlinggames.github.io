@@ -521,3 +521,7 @@ p{
    box-shadow: 1px 1px 1px grey;
    border-radius: 5px;
 }
+
+.bigText {
+  font-size: x-large;
+}
