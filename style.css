@@ -385,6 +385,11 @@ p{
   padding-left: 60;
 }
 
+.bulletlist-paragraph {
+  padding-left: 60;
+}
+
+
 .notes {
   border: 1px solid black;
   padding: 5 20 5 20;
