@@ -41,7 +41,12 @@
         shuffled = fisherYatesShuffle(arr)
         shuffled.forEach((item)=> {
             li = document.createElement('li')
-            li.innerHTML = `<b><a href="${item.url}">${item.title}</a></b> - ${item.text}`
+            if(item.text.length > 0) {
+                li.innerHTML = `<b><a href="${item.url}">${item.title}</a></b> - ${item.text}`
+            } else {
+                li.innerHTML = `<b><a href="${item.url}">${item.title}</a></b>`
+
+            }
             ul.appendChild(li)
 
         });
